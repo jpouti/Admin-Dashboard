@@ -1,0 +1,166 @@
+/* reset margin & padding from css */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: 'Roboto';
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper > div {
+    border: solid 1px;
+}
+
+/* --- left side Dashboard tasks --- */
+
+.container-left {
+    min-height: 100vh;
+    min-width: 15vw;
+    background-color: #0ea5e9;
+    padding: 2vh 2vw;
+    color: whitesmoke;
+    font-weight: bold; 
+}
+
+.dashboard-header {
+    font-size: 1.35rem;
+}
+
+.grid-dashboard > div {
+    display: grid;
+    grid-template-columns: 2.5vw auto;
+    gap: 1vh;
+    margin-bottom: 5vh;
+}
+
+/* --- right side of the page --- */
+
+.container-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-right > div {
+    border: solid 1px;
+}
+
+/*      header      */
+
+.header-container {
+    min-height: 15vh;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container > div {
+    flex: 1;
+    display: flex;
+    align-items:   center;
+    justify-content: space-between;
+}
+
+.flex-search {
+    display: flex;
+    align-items: center;
+}
+
+.flex-profile-1 {
+    display: flex;
+    align-items: center;
+}
+
+.flex-profile-2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#profile-greeting {
+    font-size: 0.8rem;
+}
+
+
+.flex-buttons button {
+    width: 7.5vw;
+    height: 3vh;
+    background-color: #0ea5e9;
+    border-color: #0ea5e9;
+    border: solid 1px;
+    color: whitesmoke;
+    border-radius: 1rem;
+}
+
+
+/*      Main  /     Projects      */
+
+.main-container {
+    flex: 1;
+    display: flex;
+}
+
+.grid-main {
+    min-width: 55vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-main > div {
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-signals {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-container > div {
+    border: solid 1px;
+    flex: 1;
+}
+
+/*      Main /  Announcements & trending    */
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-container > div {
+    border: solid 1px;
+    flex: 1;
+}
+
+.announcements-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements-container > div {
+    border: solid 1px;
+    flex: 1;
+}
+
+.grid-trending {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
